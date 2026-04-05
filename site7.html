@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D-TECH SOLUTIONS | Cloud & DevOps</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--navy:#0a192f;
+--dark:#020617;
+--blue:#2563eb;
+--cyan:#06b6d4;
+--card:#111827;
+--text:#e5e7eb;
+--muted:#9ca3af;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+body{background:var(--navy);color:var(--text);line-height:1.6}
+section{padding:80px 10%}
+h1{font-size:3rem;margin-bottom:20px}
+h2{font-size:2rem;margin-bottom:20px}
+p{color:var(--muted)}
+.flex{display:flex;flex-wrap:wrap;gap:20px}
+.center{text-align:center}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(2,6,23,.9);
+padding:18px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(10px);
+}
+.logo{
+font-weight:700;
+font-size:1.4rem;
+color:var(--cyan);
+letter-spacing:1px;
+}
+
+.btn{
+background:linear-gradient(90deg,var(--blue),var(--cyan));
+padding:14px 28px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+font-weight:600;
+border:none;
+cursor:pointer;
+}
+
+.card{
+background:var(--card);
+padding:30px;
+border-radius:14px;
+flex:1;
+min-width:250px;
+transition:.3s;
+border:1px solid #1f2937;
+}
+.card:hover{transform:translateY(-8px);border-color:var(--cyan)}
+
+.hero{
+padding-top:140px;
+padding-bottom:120px;
+background: radial-gradient(circle at top,#0f2a44,#020617);
+}
+
+.badges span{
+background:#0f172a;
+padding:8px 14px;
+border-radius:999px;
+margin:5px;
+display:inline-block;
+font-size:.85rem;
+border:1px solid #1f2937;
+}
+
+footer{background:var(--dark);padding:25px;text-align:center}
+
+/* FORM */
+input, textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+border:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div class="logo">D-TECH SOLUTIONS</div>
+<a href="#contact" class="btn">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero center">
+<h1>Enterprise IT & Cloud for Modern Businesses</h1>
+<p>We secure, automate and scale your infrastructure.</p>
+<a href="#contact" class="btn">Contact Us</a>
+
+<div class="badges" style="margin-top:30px">
+<span>Cloud Infrastructure</span>
+<span>DevOps Automation</span>
+<span>Cybersecurity</span>
+<span>Networking</span>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section>
+<h2 class="center">Our Services</h2>
+<div class="flex">
+<div class="card">
+<h3>🌐 Network Setup</h3>
+<p>Office Wi-Fi, routers, VPNs, firewalls and troubleshooting.</p>
+</div>
+<div class="card">
+<h3>🖥️ Server Administration</h3>
+<p>Windows & Linux servers, backups, Active Directory and email setup.</p>
+</div>
+<div class="card">
+<h3>☁️ Cloud Solutions</h3>
+<p>AWS setup, migration, backup & cost optimization.</p>
+</div>
+
+<div class="card">
+<h3>⚙️ DevOps</h3>
+<p>CI/CD pipelines, Docker, Kubernetes & Infrastructure as Code.</p>
+</div>
+
+<div class="card">
+<h3>🔐 Security & Monitoring</h3>
+<p>24/7 monitoring, alerts, logging & disaster recovery.</p>
+</div>
+
+<div class="card">
+<h3>💻🔧 IT Support</h3>
+<p>Remote support, maintenance and long-term IT management.</p>
+</div>
+
+</div>
+</section>
+
+<!-- WHY -->
+<section class="center">
+<h2>Why Choose D-TECH?</h2>
+<div class="flex" style="margin-top:40px">
+<div class="card"><h3>High Availability Focus</h3></div>
+<div class="card"><h3>Automation First Approach</h3></div>
+<div class="card"><h3>Reliable & Secure Solutions</h3></div>
+</div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="center">
+<h2>Client Success</h2>
+<p style="max-width:700px;margin:auto">
+“D-TECH SOLUTIONS designed a high-availability database that transformed our disaster recovery. 
+Our systems now stay online even during failures.”
+</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="center">
+<h2>Contact D-TECH SOLUTIONS</h2>
+<p>Tell us about your project. We’re ready to help.</p>
+
+<div style="margin:30px 0">
+<p><strong>Email:</strong> dominicogeto2@gmail.com.com</p>
+<p><strong>WhatsApp:</strong> +254710482803</p>
+<a href="https://wa.me/+254710482803" class="btn">Chat on WhatsApp</a>
+</div>
+
+<form action="https://formsubmit.co/dominicogeto2@gmail.com.com" method="POST" style="max-width:600px;margin:auto">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="text" name="subject" placeholder="Subject">
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn">Send Message</button>
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="thanks.html">
+
+</form>
+</section>
+
+<footer>
+<p>© 2026 D-TECH SOLUTIONS</p>
+</footer>
+
+</body>
+</html>
